@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+  crossorigin="anonymous" 
+  referrerpolicy="no-referrer" />
+  <title>Mi Porfolio</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+</head>
+<body>
+  <!---menu encabezado -->
+  <div class="contenedor-header">
+    <header>
+      <div class = 'logo'>
+        <a href="#"><i class="fa-solid fa-pen-nib"></i>  DarMarz </a>
+      </div>
+      <nav id = 'nav' >
+        <ul>
+          <li><a href="#inicio" onclick="selecionar()">INICIO</a></li>
+          <li><a href="#sobremi"onclick="selecionar()">SOBRE MI</a></li>
+          <li><a href="#herramientas"onclick="selecionar()">HERRAMIENTAS</a></li>
+          <li><a href="#cv"onclick="selecionar()">CURRICULUM</a></li>
+          <li><a href="#contacto"onclick="selecionar()">CONTACTO</a></li>
+        </ul>
+      </nav>
+      <div class="nav-responsive" onclick="mostraryocultarmenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    </header>
+  </div>
+<!--seccion de inicio---> <!----->
+<section id = 'inicio' class="inicio">
+  <div class="contenido-baner">
+    <div class="contenido-img">
+      <img src="img 1.png" alt = ''>
+    </div>
+    <h1> Dario Marzzucco</h1>
+    <h2>Programador en desarrollo & Estudiante en Ingeniería  en Sistema</h2>
+    <div class="redes">
+      <a href="#" onclick="redireccionar('https://github.com/DMarzzucco')"><i class="fa-brands fa-github"></i></a>
+      <a href="#" onclick="redireccionar('mailto:drrkermazyxokv@gmail.com')"><i class="fa-brands fa-google"></i></a>
+      <a href="#" onclick="redireccionar('https://api.whatsapp.com/send?phone=+54 9 3462 56-8958')"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="#" onclick="redireccionar('https://telegram.me/Darmarzrold77')"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" onclick="redireccionar('https://www.linkedin.com/in/dario-marzzucco-597090283/')"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+<!--seccion sobre mi--->
+<section id="sobremi" class="sobremi">
+  <div class="contenido-seccion">
+    <h2>Sobre Mi</h2>
+    <p>Hola, mi nombre es Dario. Soy estudiante de la UTN (Universidad Nacional de Tecnologia),
+    cursando la tecnicatura universitaria en programacion y 
+    por arrancar la carrera de Ing en Sistema.</p>
+    <div class="filas">
+      <!--intereses--->
+      <div class="col">
+        <h3>Atracciones Personales</h3>
+        <div class="intereses">
+          <div class="contenedor-interes">
+            <div class="interes">
+              <i class="fa-brands fa-spotify"></i><span>Musica</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-pen"></i><span>Dibujar</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-location-dot"></i><span>Viajar</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-tree"></i><span>Naturaleza</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-camera"></i><span>Fotos</span>
+            </div>
+            <div class="interes">
+              <i class="fa-brands fa-playstation"></i><span>Juegos</span>
+            </div>
+            <div class="interes">
+              <i class="fa-brands fa-readme"></i><span>Leer</span>
+            </div>
+            <div class="interes">
+              <i class="fa-solid fa-microscope"></i><span>Nuevas Cosas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--seccion herramientas-->
+<section id="herramientas" class="herramientas">
+  <div class="contenido-skill">
+    <h2>Herramientas</h2>
+    <div class="filas">
+      <div class="tipo-deskills">
+        <div class="skill">
+        <div class="icono-container"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="icono-container"><q class="fa-brands fa-html5"></q><span>HTML</span></div>
+        <div class="icono-container"><a class="fa-brands fa-css3-alt"></a><span>CSS</span></div>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<!--CV-->
+<section id="cv" class="cv">
+  <div class="contenido-cv">
+    <h2>Curriculum</h2>
+    <button>
+      Descargar CV <i class="fa-solid fa-file-arrow-down"></i>
+      <span class="overlay"></span>
+    </button>
+  </div>
+</section>
+<!--Contactos-->
+<section id="contacto" class="contacto">
+  <div class="contenido-contacto">
+    <h2>Contacto</h2>
+    <div class="filas">
+      <div class="col">
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Numero de Telefono">
+        <input type="text" placeholder="Gmail">
+        <input type="text" placeholder="Contexto">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+        <button>
+          Enviar <i class="fa-solid fa-paperclip"></i>
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<!--footer-->
+<footer>
+  <a href="#inicio" class="arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </a>
+  <div class="redes">
+    <a href="#" onclick="redireccionar('https://github.com/DMarzzucco')"><i class="fa-brands fa-github"></i></a>
+    <a href="#" onclick="redireccionar('mailto:drrkermazyxokv@gmail.com')"><i class="fa-brands fa-google"></i></a>
+    <a href="#" onclick="redireccionar('https://api.whatsapp.com/send?phone=+54 9 3462 56-8958')"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#" onclick="redireccionar('https://telegram.me/Darmarzrold77')"><i class="fa-brands fa-telegram"></i></a>
+    <a href="#" onclick="redireccionar('https://www.linkedin.com/in/dario-marzzucco-597090283/')"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
