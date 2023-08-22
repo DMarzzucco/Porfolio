@@ -121,15 +121,17 @@
     <h2>Contacto</h2>
     <div class="filas">
       <div class="col">
-        <input type="text" placeholder="Nombre">
-        <input type="text" placeholder="Numero de Telefono">
-        <input type="text" placeholder="Gmail">
-        <input type="text" placeholder="Contexto">
-        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-        <button>
-          Enviar <i class="fa-solid fa-paperclip"></i>
-          <span class="overlay"></span>
-        </button>
+        <form action="proceso-formulario.php" method="post" class="col">
+          <input type="text" name="nombre" placeholder="Nombre">
+          <input type="text" name="telefono" placeholder="Numero de Telefono">
+          <input type="text" name="email" placeholder="Gmail">
+          <input type="text" name= "contexto"placeholder="Contexto">
+          <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+          <button>
+            Enviar <i class="fa-solid fa-paperclip"></i>
+            <span class="overlay"></span>
+          </button>
+        </form>
       </div>
     </div>
   </div>
