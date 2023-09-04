@@ -20,7 +20,7 @@ html{
   z-index: 99;
 }
 .contenedor-header header{
-  max-width: 1100px;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -55,6 +55,9 @@ html{
   border-radius: 5px;
   cursor: pointer;
   display: none;
+}
+.inicio, .sobremi, .herramientas, .cv, .contacto{
+  width: 100%;
 }
 /*inicio*/
  .inicio{
@@ -200,28 +203,28 @@ html{
   display: inline-block;
   color: rgb(214, 170, 25);
   text-decoration: none;
-  width: 82px;
-  height: 82px;
+  width: 52px;
+  height: 52px;
   margin: 0 10px;
-  font-size: 82px;
+  font-size: 52px;
 }
 .herramientas .filas .tipo-deskills .skill q{
   display: inline-block;
   color: rgb(224, 100, 17);
   text-decoration: none;
-  width: 82px;
-  height: 82px;
+  width: 52px;
+  height: 52px;
   margin: 0 10px;
-  font-size: 82px;
+  font-size: 52px;
 }
 .herramientas .filas .tipo-deskills .skill a{
   display: inline-block;
   color: rgb(6, 101, 226);
   text-decoration: none;
-  width: 82px;
-  height: 82px;
+  width: 52px;
+  height: 52px;
   margin: 0 10px;
-  font-size: 82px;
+  font-size: 52px;
 }
 /*CV*/
 .cv{
@@ -240,11 +243,10 @@ html{
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #6699718e;
-  width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
-  font-size: 80px;
+  font-size: 30px;
   color: aliceblue;
   position: relative;
   z-index: 10;
@@ -302,7 +304,6 @@ html{
   cursor: pointer;
   background-color: transparent;
   border: 2px solid #6699718e;
-  width: fit-content;
   display: block;
   margin: 20px auto;
   padding: 10px 22px;
