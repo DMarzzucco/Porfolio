@@ -32,19 +32,126 @@
         </div>
         </header>
       </div>
-    <section id="herramientas" class="herramientas">
-        <div class="contenido-skill">
+        <section id="herramientas" class="herramientas">
           <h2>Herramientas</h2>
-          <div class="filas">
-            <div class="tipo-deskills">
-              <div class="skill">
-              <div class="icono-container"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
-              <div class="icono-container"><q class="fa-brands fa-html5"></q><span>HTML</span></div>
-              <div class="icono-container"><a class="fa-brands fa-css3-alt"></a><span>CSS</span></div>
-              </div> 
-            </div>
+          <div>
+              <button class="tab-button1" onclick="openTab('tab1')"><i class="fa-brands fa-html5"></i>.</button>
+              <button class="tab-button2" onclick="openTab('tab2')"><i class="fa-brands fa-square-js"></i>.</button>
+              <button class="tab-button3" onclick="openTab('tab3')"><i class="fa-brands fa-css3"></i>.</button>
+              <button class="tab-button4" onclick="openTab('tab4')"><i class="fa-brands fa-php"></i>.</button>
+              <button class="tab-button5" onclick="openTab('tab5')"><i class="fa-solid fa-code"></i>Intereses a Futuro</button>
+          </div>
+      
+          
+          <div class="tab-contenido">
+
+            <!--html-->
+            <div class="tab active" id="tab1">
+              <div class="contenido-intab">
+                <h2>HTML</h2>
+                <div class="logo1"><i class="fa-brands fa-html5"></i></div>
+                <span>Algunas de las tecnologias que se implementar con HTML:</span>
+                <ul class="ind-html">
+                   <li><span class="indice-item"><p>Diseño de Pagina Web</p></span></li>
+                   <li><span class="indice-item"><p>HTML 5 y Semantica</p></span></li>
+                   <li><span class="indice-item"><p>Enlazar elementos multimedia</p></span></li>
+                   <li><span class="indice-item"><p>Formularios</p></span></li>
+                   <li><span class="indice-item"><p>Responsive Web Design</p></span></li>
+                   <li><span class="indice-item"><p>Optimizacion de Renderizado</p></span></li>
+                   <li><span class="indice-item"><p>Inegracion con CSS, JS y otras herramientas</p></span></li>
+                   <li><span class="indice-item"><p>Mantenimiento y Actualizaciones</p></span></li>
+                </ul>
+              </div>
+             </div>
+
+            <!--js-->
+            <div class="tab" id="tab2">
+              <div class="contenido-intab">
+                <h2>JavaScript</h2>
+                <div class="logo2"><i class="fa-brands fa-square-js"></i></div>
+                <span>Tecnologias de JS que uso actualmente:</span>
+                <ul class="ind-js">
+                    <li><span><p>Desarrollo Front-End</p></span></li>
+                    <li><span><p>Programacion Orientada a Objetos</p></span></li>
+                    <li><span><p>Empleo de Eventos</p></span></li>
+                    <li><span><p>Manipulacion de Document Object Model</p></span></li>
+                    <li><span><p>Testing y Depuracion</p></span></li>
+                    <li><span><p>Optimizacion de codigos</p></span></li>
+                </ul>
+                <span>Tecnologias a futuro que en la actualidad estoy estudiando:</span>
+                <ul class="ind-js2">
+                    <li><span><p>Desarrollo Backend</p></span></li>
+                    <li><span><p>Desarrollo de Aplicaciones Moviles</p></span></li>
+                    <li><span><p>Programacion Asincrona/ Callbacks</p></span></li>
+                    <li><span><p>Peticiones HTTP y AJAX</p></span></li>
+                    <li><span><p>Frameworks y otras bibliotecas de JS como Angular, Vue, ect</p></span></li>
+                </ul>
+              </div>
+          </div>
+      
+          <!--css-->
+          <div class="tab" id="tab3">
+            <div class="contenido-intab">
+              <h2>CSS</h2>
+              <div class="logo3"><i class="fa-brands fa-css3"></i></div>
+              <span>Mis Habilidades en Syle</span>
+              <ul class="ind-css">
+                  <li><span><p>Diseño de Paginas Web Responsive</p></span></li>
+                  <li><span><p>Estilizacion y Diseño Visual</p></span></li>
+                  <li><span><p>CSS3 y Animaciones</p></span></li>
+                  <li><span><p>Flexbox y Grid Layout</p></span></li>
+                  <li><span><p>WCAG</p></span></li>
+                  <li><span><p>Optimizaciones y Rendimiento</p></span></li>
+                  <li><span><p>Compatibilidad entre diversos Navegadores</p></span></li>
+                  <li><span><p>Mantenimiento y Refactoizaciones</p></span></li>
+                  <li><span><p>Personalizacion de Temas</p></span></li>
+                  <li><span><p>Control de Versiones </p></span></li>
+                  <li><span><p>Diseño Centrado en el Usuario</p></span></li>
+              </ul>
+            </div>         
+          </div>
+      
+          <!--php-->
+          <div class="tab" id="tab4">
+            <div class="contenido-intab">
+              <div class="log4"><i class="fa-brands fa-php"></i></div>
+              <p>PHP es una de las teconolgias que he empezado a ver no hace mucho y que al igual que JS sigo estudiando, para asi adentrarme al Desarrollo Backend</p>
+              <span>Esto es lo que por ahora incorporo en PHP:</span>
+              <ul class="ind-php">
+                  <li><span><p>Desarrollo Web con PHP</p></span></li>
+                  <li><span><p>Bases de Datos y My SQL</p></span></li>
+                  <li><span><p>Programacion Orientada a Objetos</p></span></li>
+                  <li><span><p>Gestion de Sesiones y Autenticacion</p></span></li>
+                  <li><span><p>Mantenimiento</p></span></li>
+                  <li><span><p>Integracion en Front-End, en lo que conlleva la creacion de formularios</p></span></li>
+                  <li><span><p>Depuracion y Pruebas</p></span></li>
+              </ul>
+            </div>            
+          </div>
+      
+          <!--intereses a futuro-->
+          <div class="tab" id="tab5">
+            <div class="contenido-intab">
+              <h2>Intereses a Futuro</h2>              
+              <div class="react">
+                  <p><i class="fa-brands fa-react"></i> React</p>
+              </div>
+              <div class="node">
+                  <p><i class="fa-brands fa-node-js"></i> Node.js</p>
+              </div>
+              <div class="angular">
+                  <p><i class="fa-brands fa-angular"></i> Angular</p>
+              </div>
+              <div class="python">
+                  <p><i class="fa-brands fa-python"></i> Python</p>
+              </div>
+              <div class="net">
+                  <p><i class="fa-solid fa-circle-nodes"></i>Microsoft .NET</p>
+              </div>
+            </div>           
           </div>
         </div>
+         
       </section>
       <footer>
         <div class="redes">
