@@ -63,6 +63,7 @@ html{
   background: linear-gradient(to top, rgba(42, 68, 48, 0.589), rgba(41, 100, 68, 0.623)),
   url(fondo.jpeg);
   background-size: cover;
+  background-position: center;
   height: 100vh;
   color: aliceblue;
   display: flex;
@@ -110,6 +111,8 @@ html{
 .sobremi{
   background:linear-gradient(to top, rgba(42, 68, 48, 0.589), rgba(41, 100, 68, 0.623)),
   url(fondo2.jpg);
+  background-size: cover;
+  background-position: center;
   color: aliceblue;
   height: 100%;
   padding: 50px 20px;
@@ -264,6 +267,12 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      .bt-herr button{
+        transition: 0.5s;
+      }
+      .bt-herr button:hover{
+        scale: 1.1;
       }
       .tab-button1, .tab-button2, .tab-button3, .tab-button4, .tab-button5 {
           padding: 10px 20px;
@@ -654,6 +663,10 @@ footer .grupo3{
   }
   .proyectos .filas-proyectos .proyect{
     width: 200px;
+  }
+  .contacto{
+    background-size: cover;
+    background-position: 50% 20%;
   }
   .contacto .filas{
     display: block;
