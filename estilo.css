@@ -61,7 +61,7 @@ html{
 /*inicio*/
  .inicio{
   background: linear-gradient(to top, rgba(42, 68, 48, 0.589), rgba(41, 100, 68, 0.623)),
-  url(fondo.jpeg);
+  url(/img/fondo.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -110,7 +110,7 @@ html{
 /*SOBREMI*/
 .sobremi{
   background:linear-gradient(to top, rgba(42, 68, 48, 0.589), rgba(41, 100, 68, 0.623)),
-  url(fondo2.jpg);
+  url(/img/fondo2.jpg);
   background-size: cover;
   background-position: center;
   color: aliceblue;
@@ -209,7 +209,7 @@ html{
 .herramientas{
   align-items: center;
   padding: 50px 20px;
-  background:url(fondo3.jpg);
+  background:url(/img/fondo3.jpg);
   width: 100%;
   height: 100%;
 }
@@ -381,7 +381,7 @@ html{
   padding: 50px 20px;
   height: 115vh;
   background:linear-gradient(to top, rgba(47, 74, 92, 0.589), rgba(4, 57, 78, 0.623)),
-  url(fondo6.jpeg);
+  url(/img/fondo6.jpeg);
   color: aliceblue;
 }
 .proyectos h2{
@@ -464,7 +464,7 @@ html{
   padding: 50px 20px;
   height: 170vh;
   background:linear-gradient(to top, rgba(27, 39, 48, 0.589), rgba(44, 60, 66, 0.623)),
-  url(fondo5.jpg);/*agregar imagen de fondo*/
+  url(/img/fondo5.jpg);/*agregar imagen de fondo*/
   color: aliceblue;
 }
 .contacto .contenido-contacto{
@@ -652,7 +652,7 @@ footer .grupo3{
   .proyectos{
     height: 100%;
     background:linear-gradient(to top, rgba(47, 74, 92, 0.589), rgba(4, 57, 78, 0.623)),
-    url(fondo6mob.jpg);
+    url(/img/fondo6mob.jpg);
   }
   .proyectos .filas-proyectos{
     display: flex;

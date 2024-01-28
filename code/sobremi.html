@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>SysteMarzz</title>
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="shortcut icon" href="/img/icone.png" type="image/x-icon">
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+          <div class = 'logo'>
+            <a href="/index.html"> <img src="/img/logo1.png" alt=""></a>
+          </div>
+          <nav id = 'nav' >
+            <ul>              
+              <li><a href="herramientas.html"onclick="selecionar()">HERRAMIENTAS</a></li>
+              <li><a href="proyectos.html" onclick="selecionar()">PROYECTOS</a></li>
+              <li><a href="contacto.html"onclick="selecionar()">CONTACTO</a></li>
+            </ul>
+          </nav>
+          <div class="nav-responsive" onclick="mostraryocultarmenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        </header>
+      </div>
+      <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+          <h2>Sobre Mi</h2>
+          <div class="inf-abo">
+            <p>Soy estudiante de la UTN (Universidad Nacional de Tecnología), cursando la tecnicatura universitaria en programación y la carrera de Ingeniería en Sistema.</p>
+              <p>En lo que va mi desarrollo como programador, me he especializado en el desarrollo front-end, pero también, en estos últimos tiempos de esta actualización, he empezado a entrar en lo que es el desarrollo back-end con tecnologías como PHP y MySQL. 
+              <p>Mi experiencia laboral en programación reside en haber desarrollado algunos sitios web para personas allegadas a mi. </p>
+              <p>Al momento de escribir esto estoy cursando el cuarto año de la licenciatura en ingeniería en sistema  y estoy a un año de terminar con la tecnicatura. </p>
+              <p>También poseo conocimientos en diseño integral, aunque me quedaron materias pendientes para tener el título, me quedé con varios conocimientos de la materia.
+              Me se desempeñar bastante bien en lo que es Ilustración digital como también desarrollo logotipos. Usando herramientas como CorelDraw/Inkscape y Adobe Illustrator.</p>
+              <p>Y para finalizar también tengo conocimientos en Office: Excel, PowerPoint y Word.
+              </p>
+          </div>
+
+          <div class="filas">
+            <!--intereses--->
+            <div class="col">
+              <h3>Atracciones Personales</h3>
+              <div class="intereses">
+                <div class="contenedor-interes">
+                  <div class="interes">
+                    <i class="fa-brands fa-spotify"></i><span>Musica</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-pen"></i><span>Dibujar</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-location-dot"></i><span>Viajar</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-tree"></i><span>Naturaleza</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-camera"></i><span>Fotos</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-brands fa-playstation"></i><span>Juegos</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-brands fa-readme"></i><span>Leer</span>
+                  </div>
+                  <div class="interes">
+                    <i class="fa-solid fa-microscope"></i><span>Nuevas Cosas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cvdow">
+          <h2>Descargar Cv</h2>
+          <a href="/pdf/Currículum.pdf" download="">
+            <button>
+              <i class="fa-solid fa-chevron-down"></i>
+              <span class="overlay"></span>
+            </button>
+            </a>
+        </div>
+      </section>
+
+<!--footer-->
+<footer>
+  <!--grupo 1-->
+  <div class="grupo1">
+    <div class="box">
+        <figure> <!--estsa etiqueta sirve para poner un icono o loogo-->
+            <a href="#"><img src="/img/footer.jpg" alt=""></a>
+        </figure>            
+    </div>            
+    <div class="box">
+        <h2>CONTACTO</h2>
+        <div class="redes-s">
+            <p><i class="fa-solid fa-phone"></i>+54 9 3462 56-8958</p>
+            <p><i class="fa-regular fa-envelope"></i>drrkermazyxokv@gmail.com</p>
+            <a href="#" onclick="redireccionar('https://github.com/DMarzzucco')"><i class="fa-brands fa-github"></i></a>
+            <a href="#" onclick="redireccionar('mailto:drrkermazyxokv@gmail.com')"><i class="fa-brands fa-google"></i></a>
+            <a href="#" onclick="redireccionar('https://api.whatsapp.com/send?phone=+54 9 3462 56-8958')"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" onclick="redireccionar('https://telegram.me/Darmarzrold77')"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" onclick="redireccionar('https://www.linkedin.com/in/dario-marzzucco-597090283/')"><i class="fa-brands fa-linkedin"></i></a>
+            <!--colocar mis redes-->
+        </div>
+    </div>
+  </div>
+  
+  <!--grupo2-->    
+  <div class="grupo2">
+    <div class="sour-box">
+        <a href="#" onclick="redireccionar('https://github.com/DMarzzucco/Porfolio.git')">source</a>
+    </div>
+  </div>
+  
+  <!--grupo3-->
+  <div class="grupo3">
+    <small>&copy; 2023 <b>SysteMarzz</b> - Todos los Derechos Reservados. </small>
+  </div>
+  </footer>
+      <script src="/scripts.js"></script>
+</body>
+</html>
