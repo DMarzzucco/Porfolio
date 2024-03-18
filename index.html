@@ -1,87 +1,97 @@
-
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-  crossorigin="anonymous" 
-  referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>SysteMarzz</title>
   <link rel="stylesheet" href="estilo.css">
   <link rel="shortcut icon" href="/img/icone.png" type="image/x-icon">
 </head>
+
 <body>
   <!---menu encabezado -->
   <div class="contenedor-header">
     <header>
-      <div class = 'logo'>
-        <a href="#inicio"> <img src="/img/logo1.png" alt=""></a>
-      </div>
-      <nav id = 'nav' >
+      <nav id='nav'>
         <ul>
-          <li><a href="/code/sobremi.html"onclick="selecionar()">ABOUT ME</a></li>
+          <li><a href="/code/sobremi.html" onclick="selecionar()">ABOUT ME</a></li>
           <li><a href="/code/proyectos.html" onclick="selecionar()">PROJECTS</a></li>
-          <li><a href="/code/herramientas.html"onclick="selecionar()">TECHNOLOGIES</a></li>
-          <!-- <li><a href="/code/contacto.html"onclick="selecionar()">CONTACTO</a></li> -->
+          <li><a href="/code/herramientas.html" onclick="selecionar()">TECHNOLOGIES</a></li>
         </ul>
       </nav>
       <div class="nav-responsive" onclick="mostraryocultarmenu()">
         <i class="fa-solid fa-bars"></i>
-    </div>
+      </div>
     </header>
   </div>
-<!--seccion de inicio---> <!----->
-<section id = 'inicio' class="inicio">
-  <div class="contenido-baner">
-    <div class="contenido-img">
-      <img src="/img/img 1.png" alt = ''>
+  <!--seccion de inicio---> <!----->
+  <section id='inicio' class="inicio">
+    <div style="display: flex ; flex-direction: column; justify-content: center; align-items: center;">
+      <img src="img/Nav.png" alt="" style="width: 100px; margin: 13px 0px;">
+      <img src="img/Home.png" alt="" style="width: 300px; height:56px;">
     </div>
-    <h1> Dario Marzzucco</h1>
-    <span>Programmer||Web Developer||Graphic Designer</span>
-  </div>
-</section>
+    <a href="https://www.linkedin.com/in/dario-marzzucco-597090283/"
+      style="text-decoration: none; color: rgb(202, 214, 230);">
+      <div class="contenido-baner">
+        <div class="contenido-img" style="display: flex; justify-content: center; align-items: center;">
+          <div style="width: 80px; height:80px; background:url(img/img1.jpeg);
+       background-position: 50% 80%; background-size: cover; border-radius: 100%;
+       border: 2px solid rgb(103, 116, 129);"></div>
+          <!-- <img src="/img/img1.jpeg" alt = '' style="border-radius: 100%;"> -->
+        </div>
+        <div class="conten-name">
+          <h1> Dario Marzzucco</h1>
+          <span>Programmer||Web Developer||Graphic Designer</span>
+        </div>
+      </div>
+    </a>
+  </section>
 
-<!--footer-->
-<footer>
-<!--grupo 1-->
-<div class="grupo1">
-  <div class="box">
-      <figure> <!--estsa etiqueta sirve para poner un icono o loogo-->
+  <!--footer-->
+  <footer>
+    <!--grupo 1-->
+    <div class="grupo1">
+      <div class="box">
+        <figure> <!--estsa etiqueta sirve para poner un icono o loogo-->
           <a href="#"><img src="/img/footer.jpg" alt=""></a>
-      </figure>            
-  </div>            
-  <div class="box">
-      <h2>CONTACT</h2>
-      <div class="redes-s">
+        </figure>
+      </div>
+      <div class="box">
+        <h2>CONTACT</h2>
+        <div class="redes-s">
           <p><i class="fa-solid fa-phone"></i>+54 9 3462 56-8958</p>
           <p><i class="fa-regular fa-envelope"></i>drrkermazyxokv@gmail.com</p>
           <a href="#" onclick="redireccionar('https://github.com/DMarzzucco')"><i class="fa-brands fa-github"></i></a>
           <a href="#" onclick="redireccionar('mailto:drrkermazyxokv@gmail.com')"><i class="fa-brands fa-google"></i></a>
-          <a href="#" onclick="redireccionar('https://api.whatsapp.com/send?phone=+54 9 3462 56-8958')"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#" onclick="redireccionar('https://telegram.me/Darmarzrold77')"><i class="fa-brands fa-telegram"></i></a>
-          <a href="#" onclick="redireccionar('https://www.linkedin.com/in/dario-marzzucco-597090283/')"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" onclick="redireccionar('https://api.whatsapp.com/send?phone=+54 9 3462 56-8958')"><i
+              class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" onclick="redireccionar('https://telegram.me/Darmarzrold77')"><i
+              class="fa-brands fa-telegram"></i></a>
+          <a href="#" onclick="redireccionar('https://www.linkedin.com/in/dario-marzzucco-597090283/')"><i
+              class="fa-brands fa-linkedin"></i></a>
           <!--colocar mis redes-->
+        </div>
       </div>
-  </div>
-</div>
+    </div>
 
-<!--grupo2-->    
-<div class="grupo2">
-  <div class="sour-box">
-      <a href="#" onclick="redireccionar('https://github.com/DMarzzucco/Porfolio.git')">source</a>
-      <!--<a href="#gion a mi pagina">SysteMarzz</a>  para poner en otros proyectos-->
-  </div>
-</div>
+    <!--grupo2-->
+    <div class="grupo2">
+      <div class="sour-box">
+        <a href="#" onclick="redireccionar('https://github.com/DMarzzucco/Porfolio.git')">source</a>
+      </div>
+    </div>
 
-<!--grupo3-->
-<div class="grupo3">
-  <small>&copy; 2023 <b>SysteMarzz</b> - All Rights Reserved . </small>
-</div>
-</footer>
+    <!--grupo3-->
+    <div class="grupo3">
+      <small>&copy; 2023 <b>SysteMarzz</b> - All Rights Reserved . </small>
+    </div>
+  </footer>
 
   <script src="scripts.js"></script>
 </body>
+
 </html>

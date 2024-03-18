@@ -110,57 +110,55 @@ html {
 
 /*inicio*/
 .inicio {
-  background: linear-gradient(to top, rgba(42, 68, 48, 0.589), rgba(41, 100, 68, 0.623)),
+  background: linear-gradient(to top, #37414996, #374149c5),
     url(/img/fondo.jpeg);
   background-size: cover;
   background-position: center;
   height: 100vh;
   color: aliceblue;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 50px 20px;
 }
 
 .inicio .contenido-baner {
+  display: flex;
+  flex-direction: row;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0);
-  max-width: 360px;
+  /* max-width: 259px; */
   margin: auto;
   text-align: center;
   border-radius: 40px;
 }
 
-.inicio .contenido-baner img {
-  margin-top: 40px;
-  border: 5px solid #426d4b8a;
-  display: block;
-  width: 80%;
-  margin: auto;
-  border-radius: 100%;
+.inicio .contenido-baner .conten-name {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  margin: 0px 10px;
 }
 
-.inicio .contenido-baner h1 {
-  margin-top: 40px;
-  font-size: 42px;
+.inicio .contenido-baner .conten-name h1 {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+
 }
 
-.inicio .contenido-baner .redes a {
-  color: aliceblue;
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #669971;
-  border-radius: 100%;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  margin: 40px 5px;
-  font-size: 20px;
-  transition: .3s;
+.inicio .contenido-baner .conten-name span {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: rgb(165, 178, 204);
+  width: 45px;
 }
 
-.inicio .contenido-baner .redes a:hover {
-  background-color: #669971;
-}
 
 /*SOBREMI*/
 .sobremi {
@@ -460,14 +458,17 @@ html {
   color: #2c41a1;
   margin: 9px;
 }
-.nk{
+
+.nk {
   margin: 9px;
 }
-.nk li{
+
+.nk li {
   list-style: none;
   margin: 9px;
 }
-.nk p{
+
+.nk p {
   display: flex;
   align-items: center;
   margin: 0 10px;
@@ -501,7 +502,7 @@ html {
 .proyectos {
   padding: 50px 20px;
   height: 115vh;
-  background: linear-gradient(#1e2331,#0e248677);
+  background: linear-gradient(#1e2331, #0e248677);
   color: aliceblue;
 }
 
